@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html >
+  <head>
+
+    <meta charset="UTF-8">
+    <title>About</title>
+        <link rel="stylesheet" href="css/style.css">
+<div id='cssmenu'>
+<ul>
+    <div class="logo">
+  <a href="index.html">
+    <img src="logo.png" alt="logo" width="179" height="42">
+  </a>
+  </div>
+    <li class='active'><a href=""><span>About</span></a></li>
+   <li><a href=""><span>Features</span></a></li>
+   <li><a href=""><span>Map</span></a></li>
+   <li><a href=""><span>Login</span></a></li>
+   <button class="c-hamburger c-hamburger--htx" onclick="myFunction()" class="dropbtn">
+     <span>toggle menu</span>
+   </button>
+   <img class="badge" src="downloadbutton.png">
+</ul>
+</div>
+
+<div class="dropdown">
+
+<button onclick="myFunction()" class="dropbtn"></button>
+  <div id="myDropdown" class="dropdown-content">
+    <a class ="active" href="#home">About</a>
+    <a href="#about">Features</a>
+    <a href="#contact">Map</a>
+    <a href="#contact">Login</a>
+    <img class="badgemenu" src="downloadbuttondark.png">
+  </div>
+</div>
+<script>
+/* When the user clicks on the button,
+toggle between hiding and showing the dropdown content */
+function myFunction() {
+    document.getElementById("myDropdown").classList.toggle("show");
+}
+
+// Close the dropdown menu if the user clicks outside of it
+window.onclick = function(event) {
+  if (!event.target.matches('.dropbtn')) {
+
+    var dropdowns = document.getElementsByClassName("dropdown-content");
+    var i;
+    for (i = 0; i < dropdowns.length; i++) {
+      var openDropdown = dropdowns[i];
+      if (openDropdown.classList.contains('show')) {
+        openDropdown.classList.remove('show');
+      }
+    }
+  }
+}
+</script>
+
+</head>
+<body>
+  <div class="about-c1">
+      <h1 class="first">About</h1>
+      <p class="first-pullquote">ParkApps is a partnership created to build tools, applications and games for teaching and learning in natural settings like National, State, and Local parks. The overarching goal is to enhance our understanding of creation through the use of innovative tools and technologies.</p>
+      <p>ParkApps first application is a tool called Park-n-Discover (PND). It is a collaborative project between Kent State University, the Cuyahoga Valley National Park, and the Cleveland MetroParks and is funded by a grant from the National Science Foundation. PND is a GPS-enabled, mobile application that provides park visitors with an immersive, informal learning experience. PND gives visitors access to just-in-time information as they explore various geologic or historical landscapes and as they encountered unknown plants and animals. </p>
+      <p>They <a href="team.html">have</a> the ability to follow pre-created adventures that guide them through asking and answering important scientific questions about biology, geology, mathematics, etc. In addition to seeking and gaining information, visitors can join a community of citizen scientists, supporting science efforts by uploading photos of plants, animals, and rock formations during their visit.</p>
+      <br></div>
+      <a href="team.html"><button>Our Team</button></a>
+  <div class="about-c2">
+    <img src="iphone.png" class="fix"/>
+  </div>
+</body>
+  <footer>
+    <div class="float_center"><div class="child"><p class="footer">© 2016 Kent State University | Privacy and Terms of Use
+    </p>
+  <div class="footerimages">
+    <img class="kent" src="kentlogo.png">
+    <img class="nsf" src="nsflogo.png">
+  </div></div></div>
+
+  </footer>
+</html>

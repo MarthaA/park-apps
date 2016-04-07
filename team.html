@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html >
+  <head>
+
+    <meta charset="UTF-8">
+    <title>Our Team</title>
+        <link rel="stylesheet" href="css/style.css">
+<div id='cssmenu'>
+<ul>
+    <div class="logo">
+  <a href="index.html">
+    <img src="logo.png" alt="logo" width="179" height="42">
+  </a>
+  </div>
+    <li class='active'><a href=""><span>About</span></a></li>
+   <li><a href=""><span>Features</span></a></li>
+   <li><a href=""><span>Map</span></a></li>
+   <li><a href=""><span>Login</span></a></li>
+   <button class="c-hamburger c-hamburger--htx" onclick="myFunction()" class="dropbtn">
+     <span>toggle menu</span>
+   </button>
+   <img class="badge" src="downloadbutton.png">
+</ul>
+</div>
+
+<div class="dropdown">
+
+<button onclick="myFunction()" class="dropbtn"></button>
+  <div id="myDropdown" class="dropdown-content">
+    <a class ="active" href="#home">About</a>
+    <a href="#about">Features</a>
+    <a href="#contact">Map</a>
+    <a href="#contact">Login</a>
+    <img class="badgemenu" src="downloadbuttondark.png">
+  </div>
+</div>
+<script>
+/* When the user clicks on the button,
+toggle between hiding and showing the dropdown content */
+function myFunction() {
+    document.getElementById("myDropdown").classList.toggle("show");
+}
+
+// Close the dropdown menu if the user clicks outside of it
+window.onclick = function(event) {
+  if (!event.target.matches('.dropbtn')) {
+
+    var dropdowns = document.getElementsByClassName("dropdown-content");
+    var i;
+    for (i = 0; i < dropdowns.length; i++) {
+      var openDropdown = dropdowns[i];
+      if (openDropdown.classList.contains('show')) {
+        openDropdown.classList.remove('show');
+      }
+    }
+  }
+}
+</script>
+
+</head>
+<body>
+    <p class="breadcrumb"><a href="about.html">About</a> > <a href="team.html">Our Team</a></p>
+      <h1 class="first">Our Team</h1>
+      <h3>Kent State University Investigators</h3>
+<div class="section">
+  	<div class="col span_1_of_6">
+  	<figure><img class="team" src="team/rickferdig.png"></figure>
+    <figcaption>Rick Ferdig</figcaption>
+  	</div>
+  	<div class="col span_1_of_6">
+      <figure><img class="team" src="team/bridgetmulvey.png"></figure>
+      <figcaption>Bridget Mulvey</figcaption>
+  	</div>
+  	<div class="col span_1_of_6">
+      <figure><img class="team" src="team/drchengchanglu.png"></figure>
+      <figcaption>Dr. Cheng-Chang Lu</figcaption>
+  	</div>
+  	<div class="col span_1_of_6">
+      <figure><img class="team" src="team/annettekratcoski.jpg"></figure>
+      <figcaption>Annette Kratcoski</figcaption>
+  	</div>
+
+  </div>
+
+    <h3>Park Collaborators</h3>
+  <div class="section">
+      	<div class="col span_1_of_6">
+      	<figure><img class="team" src="team/rickferdig.png"></figure>
+        <figcaption>Rick Ferdig</figcaption>
+      	</div>
+      	<div class="col span_1_of_6">
+          <figure><img class="team" src="team/rickferdig.png"></figure>
+          <figcaption>Rick Ferdig</figcaption>
+      	</div>
+      	<div class="col span_1_of_6">
+          <figure><img class="team" src="team/rickferdig.png"></figure>
+          <figcaption>Rick Ferdig</figcaption>
+      	</div>
+      	<div class="col span_1_of_6">
+          <figure><img class="team" src="team/rickferdig.png"></figure>
+          <figcaption>Rick Ferdig</figcaption>
+      	</div>
+      	<div class="col span_1_of_6">
+          <figure><img class="team" src="team/rickferdig.png"></figure>
+          <figcaption>Rick Ferdig</figcaption>
+      	</div>
+      	<div class="col span_1_of_6">
+          <figure><img class="team" src="team/rickferdig.png"></figure>
+          <figcaption>Rick Ferdig</figcaption>
+      </div></div>
+
+      <div class="spacer"></div>
+
+
+
+</body>
+  <footer>
+    <div class="float_center"><div class="child"><p class="footer">© 2016 Kent State University | Privacy and Terms of Use
+    </p>
+  <div class="footerimages">
+    <img class="kent" src="kentlogo.png">
+    <img class="nsf" src="nsflogo.png">
+  </div></div></div>
+
+  </footer>
+</html>
