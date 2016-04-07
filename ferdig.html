@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html >
+  <head>
+
+    <meta charset="UTF-8">
+    <title>Dr. Rick Ferdig</title>
+        <link rel="stylesheet" href="css/style.css">
+<div id='cssmenu'>
+<ul>
+    <div class="logo">
+  <a href="index.html">
+    <img src="logo.png" alt="logo" width="179" height="42">
+  </a>
+  </div>
+    <li class='active'><a href=""><span>About</span></a></li>
+   <li><a href=""><span>Features</span></a></li>
+   <li><a href=""><span>Map</span></a></li>
+   <li><a href=""><span>Login</span></a></li>
+   <button class="c-hamburger c-hamburger--htx" onclick="myFunction()" class="dropbtn">
+     <span>toggle menu</span>
+   </button>
+   <img class="badge" src="downloadbutton.png">
+</ul>
+</div>
+
+<div class="dropdown">
+
+<button onclick="myFunction()" class="dropbtn"></button>
+  <div id="myDropdown" class="dropdown-content">
+    <a class ="active" href="#home">About</a>
+    <a href="#about">Features</a>
+    <a href="#contact">Map</a>
+    <a href="#contact">Login</a>
+    <img class="badgemenu" src="downloadbuttondark.png">
+  </div>
+</div>
+<script>
+/* When the user clicks on the button,
+toggle between hiding and showing the dropdown content */
+function myFunction() {
+    document.getElementById("myDropdown").classList.toggle("show");
+}
+
+// Close the dropdown menu if the user clicks outside of it
+window.onclick = function(event) {
+  if (!event.target.matches('.dropbtn')) {
+
+    var dropdowns = document.getElementsByClassName("dropdown-content");
+    var i;
+    for (i = 0; i < dropdowns.length; i++) {
+      var openDropdown = dropdowns[i];
+      if (openDropdown.classList.contains('show')) {
+        openDropdown.classList.remove('show');
+      }
+    }
+  }
+}
+</script>
+
+</head>
+<body>
+
+<p class="breadcrumb"><a href="about.html">About</a> > <a href="team.html">Our Team</a> > <a href="ferdig.html">Dr. Rick Ferdig</a></p>
+<body>
+          <div class="team-c1">
+              <img src="team/rickferdig.png" >
+              </div>
+
+          <div class="team-c2">
+            <h1 class="first">Dr. Richard Ferdig</h1>
+            <p class="first-pullquote">Richard E. Ferdig is the Summit Professor of Learning Technologies and Professor of Instructional Technology at Kent State University. He works within the Research Center for Educational Technology and also the School of Lifespan Development and Educational Sciences. </p>
+            <p>He earned his Ph.D. in Educational Psychology from Michigan State University. He has served as researcher and instructor at Michigan State University, the University of Florida, the Wyzsza Szkola Pedagogiczna (Krakow, Poland), and the Università degli studi di Modena e Reggio Emilia (Italy). At Kent State University, his research, teaching, and service focus on combining cutting-edge technologies with current pedagogic theory to create innovative learning environments. His research interests include online education, educational games and simulations, the role of faith in technology, and what he labels a deeper psychology of technology. </p>
+            <p> In addition to publishing and presenting nationally and internationally, Ferdig has also been funded to study the impact of emerging technologies such as K-12 Virtual Schools. Rick was the founding Editor-in-Chief of the International Journal of Gaming and Computer Mediated Simulations, is the current Editor-in-Chief of the Journal of Technology and Teacher Education, and also serves as a Consulting Editor for the Development Editorial Board of Educational Technology Research and Development and on the Review Panel of the British Journal of Educational Technology.</p>
+            <br>
+          </div>
+  </body>
+  <footer>
+    <div class="float_center"><div class="child"><p class="footer">© 2016 Kent State University | Privacy and Terms of Use
+    </p>
+  <div class="footerimages">
+    <img class="kent" src="kentlogo.png">
+    <img class="nsf" src="nsflogo.png">
+  </div></div></div>
+
+  </footer>
+</html>

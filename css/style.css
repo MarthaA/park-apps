@@ -233,7 +233,8 @@ color: #289f75;
 body {
   padding-left: 3em;
   padding-right: 3em;
-  padding-top: 110px;
+  padding-top: 150px;
+  margin-bottom: 700px;
   background-color: #f2f2f2;
   width:auto;
 }
@@ -241,6 +242,8 @@ body {
 h1.first {
   font-family: 'Lato', sans-serif;
   font-size: 1.8em;
+  display: block;
+  margin-top: 0px;
 }
 h2 {
   font-family: 'Lato', sans-serif;
@@ -262,7 +265,7 @@ h3 {
   font-size: 1.13em;
   font-weight: 700;
   padding-top:15px;
-  margin-bottom:-2px;
+  margin-bottom:20px;
   text-align: left;
 }
 
@@ -277,6 +280,7 @@ footer{
   left: 0;
   right: 0;
   width: 100%;
+  height: 60px;
 }
 
 p.footer {
@@ -290,8 +294,8 @@ p.footer {
 
 p.breadcrumb {
   font-size: .75em;
-  margin-top: -2em;
-  padding-bottom: .65em;
+  margin-top: -5em;
+  padding-bottom: 3em;
 }
 
 img.kent {
@@ -308,26 +312,33 @@ img.nsf {
   padding-right: 20px;
 }
 
-img.team {
-  width: 100%;
-}
 
 figure {
-  width: 100%;
+  width: 199px;
   margin: 0 auto;
 }
 
+.group {
+    float: left;
+    margin-left: .25em;
+    margin-right: .25em;
+    margin-top: .25em;
+    margin-bottom: .25em;
+}
+
 figcaption {
-  position: relative;
-  margin-top: -5px;
+  width: 199px;
+  margin: 0 auto;
   text-align: center;
   color: white;
   text-transform: uppercase;
   letter-spacing: .06em;
   background: #289f75;
-  padding: 4px;
   font-family: "Lato", sans-serif;
   font-size: .8em;
+  line-height: 2em;
+  margin-top: -4px;
+  padding-right: 1px;
 }
 
 
@@ -340,10 +351,22 @@ p {
   font-family: 'Lato', sans-serif;
   font-size: 1em;
   line-height: 140%;
+  overflow: visible;
 }
 a.button {
   color:fff;
 }
+
+.group:hover .tint {
+  background:rgba(0,0,0,.75);
+                 text-align:center;
+                 opacity:.60;
+                 -webkit-transition: opacity .25s ease;
+                 -moz-transition: opacity .25s ease;}
+
+.tint {  opacity:1;
+               padding-bottom: -25px;}
+
 button {
     text-decoration: none;
     font-family: 'Lato', sans-serif;
@@ -404,35 +427,14 @@ img.badgemenu {
       margin-left: 3.75em;
 }
 
-.spacer {
-  padding: 20em;
-}
 
-/*  SECTIONS  */
-.section {
-	clear: both;
-	padding: 0px;
-  width: 100%;
-}
 
-/*  COLUMN SETUP  */
-.col {
-	display: block;
-	float:left;
-	margin: 1% 0 1% 1.6%;
-}
-.col:first-child { margin-left: 0; }
-
-/*  GROUPING  */
-.group:before,
-.group:after { content:""; display:table; }
-.group:after { clear:both;}
-.group { zoom:1; /* For IE 6/7 */ }
-
-/*  GRID OF SIX  */
-
-.span_1_of_6 {
-  	width: 15.33%;
+.group {
+    float: left;
+    margin-left: .25em;
+    margin-right: .25em;
+    margin-top: .25em;
+    margin-bottom: .25em;
 }
 
 /*  MEDIA QUERIES  */
@@ -462,9 +464,7 @@ img.badgemenu {
   .col {
       margin: 1% 2% 1% 0%;
       }
-  .span_1_of_6, .span_2_of_6, .span_3_of_6, .span_4_of_6, .span_5_of_6, .span_6_of_6 {
-       width: 30%;
-     }
+
   }
 @media screen and (max-width: 600px) {
     img.badge {
@@ -484,6 +484,12 @@ img.badgemenu {
         width: 100%;
     }
     .about-c2 {
+        width: 100%;
+    }
+    .team-c1 {
+        width: 100%;
+    }
+    .team-c2 {
         width: 100%;
     }
     .float_center {
@@ -541,17 +547,32 @@ img.badgemenu {
 
 @media screen and (min-width: 1200px) {
     .about-c1 {
+      float: left;
       width: 50%;
       max-width:600px;
     }
 
     .about-c2 {
-      clear: none;
+      float: left;
+      width: 50%;
+      top: 0px;
         }
+        .team-c1 {
+          float: left;
+          width: 20%;
+          max-width:600px;
+        }
+
+        .team-c2 {
+          float: left;
+          width: 40%;
+          top: 0px;
+
+            }
 
     .fix{
       position: absolute;
-      bottom:0px;
+      bottom:-20px;
       width: 400px;
       right: 0px;
       padding-right: 10em;
