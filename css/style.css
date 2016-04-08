@@ -384,7 +384,7 @@ button {
     text-decoration: none;
     border:none !important;
     box-shadow:none !important;
-    width: 100%;
+    width: 74px;
     cursor: pointer;
 }
 
@@ -575,6 +575,9 @@ img.badgemenu {
       width: 400px;
       right: 0px;
       padding-right: 10em;
+
+
+
     }
 
 
@@ -582,7 +585,7 @@ img.badgemenu {
 
 @media screen and (max-height: 612px) {
     .fix{
-      position: static;
+      position: absolute;
       bottom:0px;
       width: 400px;
       height: 508px;
